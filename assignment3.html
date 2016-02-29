@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <title>Form with style</title>
+    <style>
+      body{
+      background-image:url("background.jpg");
+      }
+      #Details{
+      font-family: Calibri;
+      color: white;
+      font-weight: bold;      
+      }
+      .title{
+      float:left;
+      text-align: left;
+      width: 200px;
+      font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+      }
+      #I1{
+      border-radius: 5px;
+      width: 200px;
+      }
+      #I2{
+      border-radius: 5px;
+      position: relative;
+      left: 200px;
+       
+      }
+      textarea{
+      border-radius: 5px;
+      width: 200px;
+      }      
+      .div1{
+      border: 1px solid ;
+      width: 500px;
+      border-radius: 5px; 
+      padding: 4px;  
+      color: white;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      background-image:url("background.jpg");
+      }
+      .div2{
+      border: 1px solid ;
+      width: 500px;
+      height: 70px;
+      border-radius: 5px; 
+      padding: 4px;  
+      color: white;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      background-image:url("background.jpg");
+      }
+      
+     
+    </style>
+  </head>
+  <body>
+    <form>
+      <p id="Details">Step 1:Your details </p>
+      <div class="div1"> <label for="name" class="title">Name</label> <input name="Name"
+
+          id="I1" type="text"></div>
+      <div class="div1"><label for="Email" class="title">Email</label> <input name="Email"
+
+          id="I1" type="email"> </div>
+      <div class="div1"><label for="Phone" class="title">Phone</label> <input name="Phone Number"
+
+          id="I1" type="number"> </div>
+      <p id="Details">Step 2:Delivery Address </p>
+      <div class="div1"> <label for="Address" class="title">Address</label> <textarea
+
+          name="Address" type="text" rows="5"></textarea></div>
+      <div class="div1"><label for="Post Code" class="title">Post Code</label> <input
+
+          name="Post Code" id="I1" type="number"> </div>
+      <div class="div1"><label for="Country" class="title">Country</label> <input
+
+          name="Country" id="I1" type="text"> </div>
+      <br>
+      <div>
+        <p id="Details">Step 3:Card Details </p>
+        <div>
+          <div class="div2"><span>Card Type</span> <br>
+            <input name="VISA" value="VISA" class="rad1" src="visa.png" type="radio">
+            <label for="VISA"> <img src="visa.png"> VISA</label> <input name="AmEx"
+
+              value="AmEx" class="rad1" src="AmEx.png" type="radio"> <label for="AmEx"><img
+
+                src="AmEx.png">AmEx</label> <input name="Mastercard" value="Mastercard"
+
+              class="rad1" src="mastercard.png" type="radio"> <label for="Mastercard"
+
+              <src="Mastercard"><img src="mastercard.gif">Mastercard</label></div>
+          <div class="div1"><label for="Card Number" class="title">Card Number</label>
+            <input name="Card Number" id="I1" type="number"> </div>
+          <div class="div1"><label for="Security Code" class="title">Security
+              Code</label> <input name="Security Code" id="I1" type="number"></div>
+          <div class="div1"><label for="Name on card" class="title">Name on card</label>
+            <input name="Name on card" id="I1" type="text"> </div>
+          <div id="I2"> <input name="BuyIt" value="Buy It!!" type="button"></div>
+        </div>
+      </div>
+    </form>
+    
+  </body>
+</html>
